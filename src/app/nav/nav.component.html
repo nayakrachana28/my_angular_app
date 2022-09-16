@@ -1,54 +1,100 @@
 <nav class="navbar navbar-expand-lg navbar-red navbar-dark">
   <div class="wrapper">
-    
+
   </div>
-<div class="container-fluid all-show">
-  <img [src]="logo" alt="birds" style="height: 60px; width: 60px;">
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" routerLink="" [style.font-size]="'20px'">Lifestyle_Store</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link mt-2" style="font-size: 13px;" routerLink="card">About_Products</a>
-  </li>
+  <div class="container-fluid all-show">
+    <img [src]="logo" alt="birds" style="height: 60px; width: 60px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="" [style.font-size]="'20px'">Lifestyle_Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mt-2" style="font-size: 13px;" routerLink="card">About_Products</a>
+        </li>
 
-  <li class="nav-item dropdown" style="font-size: 17px; margin-top: 10px;">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Dropdown
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link mt-2" style="font-size: 13px;" routerLink="content-container">Events</a>
-  </li>
+        <li class="nav-item dropdown mt-2" style="font-size: 15px;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Types of Products</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" [ngClass]="drop_sty">
+            <li>
+              <a class="dropdown-item" href="#">Outfits &raquo; </a>
+              <ul class="dropdown-menu dropdown-submenu"  [ngClass]="drop_sty">
+                <li>
+                  <a class="dropdown-item" routerLink="pants">Pants</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Tops</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Tshits</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Kurtis</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="mobile">Mobile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Submenu &raquo;</a>
+              <ul class="dropdown-menu dropdown-submenu"  [ngClass]="drop_sty">
+                <li>
+                  <a class="dropdown-item" href="#">Submenu item 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Submenu item 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                  <ul class="dropdown-menu dropdown-submenu"  [ngClass]="drop_sty">
+                    <li>
+                      <a class="dropdown-item" href="#">Multi level 1</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Multi level 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Submenu item 4</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Submenu item 5</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
 
-  <li class="nav-item">
-    <a class="nav-link mt-2" style="font-size: 13px;" href="#">Events</a>
-  </li>
 
-  <li class="nav-item">
-    <a class="nav-link mt-2" style="font-size: 13px;" href="#">contact</a>
-  </li>
-  
-  
-</ul>
-<form class="d-flex" style="margin-left: 230px;">
-  <input class="form-control me-2" #productname type="search" placeholder="Search" aria-label="Search">
-  <button class="btn btn-outline-success" type="submit">Search</button>
-</form>
+        <li class="nav-item">
+          <a class="nav-link mt-2" style="font-size: 13px;" routerLink="content-container">Events</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link mt-2" style="font-size: 13px;" href="#">Events</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link mt-2" style="font-size: 13px;" href="#">contact</a>
+        </li>
 
 
-</div>
-</div>
+      </ul>
+      <form class="d-flex" style="margin-left: 200px;">
+        <input class="form-control me-2" #productname type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+
+    </div>
+  </div>
 </nav>
 
 

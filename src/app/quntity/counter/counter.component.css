@@ -1,0 +1,12 @@
+.btn-accent {
+    color: #ffffff;
+    background-color: #EC407A;
+    border-radius: 40%;
+    padding: 11px;
+}
+
+.btn-accent:hover{
+    background-color: crimson;
+}
+
+

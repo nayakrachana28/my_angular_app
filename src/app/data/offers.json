@@ -1,0 +1,39 @@
+[
+    {
+        "pid":1,
+        "pname":"SAMSUNG Galaxy A03",
+        "pimage":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662445976/Croma%20Assets/Communication/Mobiles/Images/246260_dqxkax.png/mxw_2048,f_auto"
+    },
+    {
+        "pid":2,
+        "pname":"HP Pavilion Gaming",
+        "pimage":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRkMHdv3jygi8OpBDr13Vq0xqMWSsIxmVUmCkRS_WW7fDl6zungNYEX7ZMJ1tSinjbG21PR5XIhgxZm0qLEhSvh74ytv3OeraFHgpmZdVT8D1nDEgoBguXCBA&usqp=CAE"
+    },
+    {
+        "pid":3,
+        "pname":"Embroidered Trousers",
+        "pimage":"https://asset1.cxnmarksandspencer.com/is/image/mands/SD_04_T74_9511B_KY_X_EC_0?$Intl_PDP_Tab$"
+    },
+    {
+        "pid":4,
+        "pname":"Drip Olive Cargo Pant",
+        "pimage":"https://cdn.shopify.com/s/files/1/0549/9981/0113/products/1_75be123d-a52e-4688-96fe-ced82b057f1b_900x.jpg?v=1646283190"
+    },{
+        "pid":5,
+        "pname":"Solid Crew-Neck T-shirt",
+        "pimage":"https://assets.ajio.com/medias/sys_master/root/20220818/ez5J/62fd5958f997dd394c00c02b/fidato_multicoloured_pack_of_5_solid_crew-neck_t-shirt.jpg"
+    },{
+        "pid":6,
+        "pname":"KURTI CHICKENKARI",
+        "pimage":"https://rukminim1.flixcart.com/image/832/832/kz3118w0/gown/2/d/y/00-xxl-3-4-sleeve-stitched-chkn-gown-stylish-creation-00-original-imag7herg9atmzze.jpeg?q=70"
+    },{
+        "pid":7,
+        "pname":"Aagam Graceful Kurta Set",
+        "pimage":"https://images.meesho.com/images/products/92785778/hzx0l_512.webp"
+    },{
+        "pid":8,
+        "pname":"Yellow Printed Shirt Dress",
+        "pimage":"https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/b/b/bba094bRTOR0026_1.jpg?rnd=20200526195200"
+    }
+    
+]

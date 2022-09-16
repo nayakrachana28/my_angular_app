@@ -1,0 +1,45 @@
+[
+    {
+            "pid":1,
+            "pname":"Arihant Regular Fit Track Pant for Women",
+            "pdescription":"Care Instructions:RegularHow to Buy:- For 28-30 waist size please pick small and for 32 waist select Medium Size and for 34-36 size please select Large size.",
+            "price":399,
+            "img":"https://imagescdn.vanheusenintimates.com/img/app/product/6/655338-6634705.jpg?auto=format"
+        },
+        {
+            "pid":2,
+            "pname":"Viscose Mix Plain Skinny Fit Treggings",
+            "pdescription":"Designed with a high rise and a super snug fit, these versatile bottoms will move seamlessly from the western to the ethnic end of your wardrobe.",
+            "price":499,
+            "img":"https://asset1.cxnmarksandspencer.com/is/image/mands/OD_01_T59_4955K_DR_X_EC_0?$PDP_INT_IMAGE_MOBILE_DOUBLE$"
+        },
+        {
+            "pid":3,
+            "pname":"Linen Mix Plain Loose Fit Trouser",
+            "pdescription":"Sway in utmost elegance with our trouser. Made with linen mix and featuring an elastic waistband,cropped pants are perfect to make a statement.",
+            "price":400,
+            "img":"https://asset1.cxnmarksandspencer.com/is/image/mands/SD_01_T59_1037T_YF_X_EC_0?$Intl_PDP_Tab$"
+        },
+        {
+            "pid":4,
+            "pname":"Solid Color Tummy Control Slimming Womens Fitness Yoga Pants",
+            "pdescription":"E-Commerce Fast Delivery Personality Comfortable Solid Color Tummy Control Slimming Womens Fitness Yoga Pants",
+            "price":580,
+            "img":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQSqahT7zc43hXOte-4aqAbh_V3qtPGiFYowhrE8UE-2whQaW6XmkW4JgKTGMTc7y9q_6FJQBaJSMizEl0WyHHmuYI4J3Uv2ClD9fKFG7gXteNLv9cpeTsa&usqp=CAE"
+        },
+        {
+            "pid":5,
+            "pname":"The Ultimate Flare Pants - Regular Tall",
+            "pdescription":"Crafted from washed satin fabric and cut wide though the leg for elegant style. Flattering high-waisted design, with elastic at the back for optimal comfort. Side pockets add the final touch.",
+            "price":479,
+            "img":"https://cdn.shopify.com/s/files/1/0404/0196/1115/products/flare-pants-grape-m-1_900x.jpg?v=1659526978"
+        },
+        {
+            "pid":6,
+            "pname":"Satin Pleat Front Wide Leg Trousers",
+            "pdescription":"Crafted from washed satin fabric and cut wide though the leg for elegant style. Flattering high-waisted design, with elastic at the back for optimal comfort. Side pockets add the final touch.",
+            "price":600,
+            "img":"https://asset1.cxnmarksandspencer.com/is/image/mands/SD_01_T59_1543T_FU_X_EC_0?$PDP_INT_IMAGE_MOBILE_DOUBLE$"
+        }
+        
+]
