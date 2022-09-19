@@ -1,0 +1,16 @@
+
+ <div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{{mobile_product.img}}" alt="img" style="height: 200px;">
+            </div>
+            <div class="col-sm-6">
+                <h5 class="card-title">{{mobile_product.pname}}</h5>
+                <p class="card-text">{{mobile_product.pdescription}}</p>
+                <p><b>Price: {{ mobile_product.price  | currency : 'INR'}}    </b><s>{{mobile_product.oldprice | currency : 'INR'}}</s></p>
+                <app-quntity></app-quntity>
+            </div>
+        </div>
+    </div>
+</div>

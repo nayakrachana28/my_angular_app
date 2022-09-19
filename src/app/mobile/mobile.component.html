@@ -1,3 +1,4 @@
+<!--Moving Tools-->
 <div class="row">
     <div class="col-sm-12">
         <div class="card" style="border: none;">
@@ -9,30 +10,28 @@
         </div>
     </div>
 </div>
+<!--Offer comppnents-->
 <div class="row">
-<div class="col">
-<div class="card" style="border: none;">
-    <marquee><app-offer></app-offer></marquee>
+    <div class="col">
+        <div class="card" style="border: none;">
+            <marquee>
+                <app-offer></app-offer>
+            </marquee>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-<div class="row" *ngFor="let m_Mobile of p_mobile">
+<!--Cards for Mobile-->
+<div class="row">
+    <!--First column-->
     <div class="col-sm-2">
     </div>
+    <!--Second Column-->
     <div class="col-sm-6 mt-4 mb-4 mr-4">
-        <div class="card">
-            <div class="card-body">
-            <div class="row">
-            <div class="col-sm-4">
-                <img src="{{m_Mobile.img}}" alt="img" style="height: 100px;">
-            </div>
-            <div class="col-sm-6">
-                <h5 class="card-title">{{m_Mobile.pname}}</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
+        <app-mobile-child [mobile_product]="m_Mobile" *ngFor="let m_Mobile of p_mobile"></app-mobile-child>
     </div>
-        </div>
+    <!--Third column-->
+    <div class="col-sm-4">
+        <iframe style="margin-left: 40px;" width="300" height="250" src="https://www.youtube.com/embed/e0E6-dRPcJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <iframe style="margin-left: 40px;" width="300" height="250" src="https://www.youtube.com/embed/e0E6-dRPcJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div class="col-sm-4"></div>
 </div>

@@ -17,6 +17,9 @@ import { OfferComponent } from './offer/offer.component';
 import { QuntityComponent } from './quntity/quntity.component';
 import { CounterComponent } from './quntity/counter/counter.component';
 import { CardChildComponent } from './card/card-child/card-child.component';
+import { LaptopComponent } from './laptop/laptop.component';
+import { MobileChildComponent } from './mobile/mobile-child/mobile-child.component';
+import { LaptopChildComponent } from './laptop/laptop-child/laptop-child.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { CardChildComponent } from './card/card-child/card-child.component';
     OfferComponent,
     QuntityComponent,
     CounterComponent,
-    CardChildComponent
+    CardChildComponent,
+    LaptopComponent,
+    MobileChildComponent,
+    LaptopChildComponent
   ],
   imports: [
     BrowserModule,

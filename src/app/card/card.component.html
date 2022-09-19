@@ -45,12 +45,13 @@
           <div class="card-up aqua-gradient"></div>
           <div class="card-body text-center">
             <!--Used the toggel and string inetrpolation to change "+" and '-'-->
+            <!--Toggel between the '+' and '-' using the  [ngClass]="toggleContent()"-->
             <span (click)="toggel_card()">{{symbol}}</span>
             <h4 class="card-title font-weight-bold">{{pdetails.pname}}</h4>
             <hr>
             <!--Used ng class for styling-->
             <!--Toggel to hide the description-->
-            <!--Toggel between the '+' and '-' using the [ngClass="symbol()"]-->
+            
             <!--Here ngclass is to style the Description-->
             <!--In place of [hidden] we can use *ngIf-->
             <p [ngClass]="sty" [hidden]="t_card" ><i class="fas fa-quote-left"></i>{{pdetails.pdescrption}}<i class="fas fa-quote-left"></i></p>

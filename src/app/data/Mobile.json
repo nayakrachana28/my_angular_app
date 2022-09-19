@@ -2,8 +2,10 @@
     {
             "pid":1,
             "pname":"SAMSUNG Galaxy A03 Core",
-            "pspecification":"Display: 6.5 inches (16.55 cm), TFT LCD ,Memory: 2GB RAM, 32GB ROM, microSD Card upto 1TB ,Processor: Unisoc SC9863A, Octa Core, 1.6 GHzCamera: 8 MP Rear & 5 MP Front Camera, Battery: 5000 mAh, Headphone Jack: 3.5mm Headphone Jack",
+            "pdescription":"Display: 6.5 inches (16.55 cm), TFT LCD ,Memory: 2GB RAM, 32GB ROM, microSD Card upto 1TB ,Processor: Unisoc SC9863A, Octa Core, 1.6 GHzCamera: 8 MP Rear & 5 MP Front Camera, Battery: 5000 mAh, Headphone Jack: 3.5mm Headphone Jack",
             "price":7250.00,
+            "oldprice":10500.00,
+            "pstatus":"InStock",
             "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662445976/Croma%20Assets/Communication/Mobiles/Images/246260_dqxkax.png/mxw_2048,f_auto"
         },
         {
@@ -11,6 +13,8 @@
             "pname":"realme C31",
             "pdescription":"Display: 6.5 inches (16.51 cm), HD LCD, 60 Hz Refresh Rate, Memory: 3GB RAM, 32GB ROM, Memory Card (Dedicated) upto 1TB, Processor: Unisoc T612, Octa Core, 1.82 GHz, Camera: 13 MP + 2 MP + 0.3 MP Triple Rear & 5 MP Front Camera, Battery: 5000 mAh with 10W Fast Charging, Security (Lock): Password | Pattern | Fingerprint Sensor | Face Unlock",
             "price":8799.00,
+            "oldprice":10500.00,
+            "pstatus":"InStock",
             "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662437040/Croma%20Assets/Communication/Mobiles/Images/251114_ck8zlj.png/mxw_2048,f_auto"
         },
         {
@@ -18,6 +22,8 @@
             "pname":"Motorola E32s 32GB",
             "pdescription":"16.51 cm (6.5 Inch) HD+ Display, 16+2+2 MP Primary Camera, 8MP Selfie Camera, Non-removable Li-polymer 5000mAh battery",
             "price":8499.00,
+            "oldprice":10500.00,
+            "pstatus":"OutofStock",
             "img":"https://www.reliancedigital.in/medias/Motorola-E32-Mobile-Phone-492849905-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w4MDc4MHxpbWFnZS9qcGVnfGltYWdlcy9oYWIvaGFmLzk4MzQxMDYzMjI5NzQuanBnfGYyM2QyOGM0MTQ2MGJmYTgwYmJmMmY5ZjIxNGEyMjgyMTBiNjE4ZDA0YjQyNTYwNDBhNzcyNjA0NmI3ZTc1NTA"
         },
         {
@@ -25,6 +31,8 @@
             "pname":"OnePlus Nord CE 2 Lite 5G",
             "pdescription":"Camera: 64MP Main Camera with EIS; 2MP Depth Lens and 2MP Macro Lens; Front (Selfie) Camera: 16MP Sony IMX471",
             "price":399,
+            "oldprice":10500.00,
+            "pstatus":"InStock",
             "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71AvQd3VzqL._SX679_.jpg"
         },
         {
@@ -32,6 +40,8 @@
             "pname":"Xiaomi 11 Lite",
             "pdescription":"Display: 6.55 inches (16.63 cm), AMOLED, 90 Hz Refresh Rate, Memory: 8GB RAM, 128GB ROM, microSD Card (Hybrid) upto 512GB, Processor: Qualcomm Snapdragon 732G, Octa Core, 2.3 GHz, Camera: 64 MP + 8 MP + 5 MP Triple Rear & 16 MP Front Camera, Battery: 4250 mAh with 33W Fast Charging",
             "price":18999.00,
+            "oldprice":10500.00,
+            "pstatus":"OutofStock",
             "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662424874/Croma%20Assets/Communication/Mobiles/Images/237423_dkf04k.png/mxw_2048,f_auto"
         },
         {
@@ -39,6 +49,8 @@
             "pname":"Redmi Note 11",
             "pdescription":"Display: 90Hz FHD+ (1080x2400) AMOLED display; 16.33 centimeters (6.43 inch); 20:9 aspect ratio, Camera: 50 MP Quad Rear camera with 8MP Ultra-wide, 2MP Macro and Portrait lens| 13 MP Front camera",
             "price":399,
+            "oldprice":10500.00,
+            "pstatus":"InStock",
             "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71yTvU9VgdL._SX679_.jpg"
         }
         

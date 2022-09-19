@@ -18,54 +18,84 @@
         </li>
 
         <li class="nav-item dropdown mt-2" style="font-size: 15px;">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">Types of Products</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Types of Products</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown" [ngClass]="drop_sty">
             <li>
               <a class="dropdown-item" href="#">Outfits &raquo; </a>
-              <ul class="dropdown-menu dropdown-submenu"  [ngClass]="drop_sty">
-                <li>
+              <ul class="dropdown-menu dropdown-submenu" [ngClass]="drop_sty">
+                <!--<li>
                   <a class="dropdown-item" routerLink="pants">Pants</a>
-                </li>
+                </li>-->
+               
                 <li>
-                  <a class="dropdown-item" href="#">Tops</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Tshits</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Kurtis</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" routerLink="mobile">Mobile</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Submenu &raquo;</a>
-              <ul class="dropdown-menu dropdown-submenu"  [ngClass]="drop_sty">
-                <li>
-                  <a class="dropdown-item" href="#">Submenu item 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Submenu item 2</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
-                  <ul class="dropdown-menu dropdown-submenu"  [ngClass]="drop_sty">
+                  <a class="dropdown-item" href="#">Womens &raquo; </a>
+                  <ul class="dropdown-menu dropdown-submenu" [ngClass]="drop_sty">
                     <li>
-                      <a class="dropdown-item" href="#">Multi level 1</a>
+                      <a class="dropdown-item" routerLink="pants">Pants</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Multi level 2</a>
+                      <a class="dropdown-item" href="#">Tops</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kurtis</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Submenu item 4</a>
+                  <a class="dropdown-item" href="#">mens &raquo; </a>
+                  <ul class="dropdown-menu dropdown-submenu" [ngClass]="drop_sty">
+                    <li>
+                      <a class="dropdown-item" href="#">Tshits</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#">Electronic Devices &raquo; </a>
+              <ul class="dropdown-menu dropdown-submenu" [ngClass]="drop_sty">
+                <li>
+                  <a class="dropdown-item" routerLink="mobile">Mobile</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Submenu item 5</a>
+                  <a class="dropdown-item" routerLink="laptop-child">Laptop</a>
+                </li>
+              </ul>
+            </li>
+
+            
+            <li>
+              <a class="dropdown-item" href="#">Kids Store &raquo;</a>
+              <ul class="dropdown-menu dropdown-submenu" [ngClass]="drop_sty">
+                <li>
+                  <a class="dropdown-item" href="#">Toys</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Girls &raquo; </a>
+                  <ul class="dropdown-menu dropdown-submenu" [ngClass]="drop_sty">
+                    <li>
+                      <a class="dropdown-item" href="#">Kids Dress</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids Pants</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Boys &raquo; </a>
+                  <ul class="dropdown-menu dropdown-submenu" [ngClass]="drop_sty">
+                    <li>
+                      <a class="dropdown-item" href="#">Kids T-shirt Boys</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kids Pants Boys</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Dolls</a>
                 </li>
               </ul>
             </li>
@@ -75,10 +105,6 @@
 
         <li class="nav-item">
           <a class="nav-link mt-2" style="font-size: 13px;" routerLink="content-container">Events</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link mt-2" style="font-size: 13px;" href="#">Events</a>
         </li>
 
         <li class="nav-item">

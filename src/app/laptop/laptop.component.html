@@ -1,0 +1,35 @@
+<!--<div class="container">-->
+
+  
+    <!-- Card Laptop-->
+    <div class="row">
+      <div class="col-lg-12 mt-3">
+    <div class="card rounded shadow">
+      <div class="card-body p-4">
+        <img src="{{product.limage}}" alt="" class="card-img-top" style="height: 230px; text-align: center;">
+        <p style="font-size: large;"><b> {{product.lname }}</b> &nbsp;<span (click)="Toggel_laptop()" [ngClass]="Symbol_toggel_laptop()"></span></p>
+        
+        <p class="small font-italic" [hidden]="Toggel_lap">{{product.ldescription}}</p>
+        <p><b>Price: {{ product.lprice  | currency : 'INR'}}    </b><s>{{product.loldprice | currency : 'INR'}}</s></p>
+        <div class="row">
+        <div class="col-sm-7">
+          <app-quntity></app-quntity>
+        </div>
+        <div class="col-sm-5" [ngSwitch]="product.lstatus" style="margin-top: 81px;">
+        <a href="" class="btn btn-outline-success btn-sm" style="margin-top: 5px;" *ngSwitchCase="'InStock'">{{product.lstatus}}</a>
+        <a href="" class="btn btn-outline-danger btn-sm" style="margin-top: 5px;" *ngSwitchCase="'OutofStock'">{{product.lstatus}}</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+
+
+
+
+
+    
+

@@ -76,6 +76,7 @@ view_details(pr_id:string):void{
 
 
 //toggel card details
+
 t_card=true;
 symbol:any='+';
 toggel_card()
@@ -90,19 +91,28 @@ toggel_card()
   }
 }
 
+
  //used ngClass for changing + and -
-/*
-symbol(){
-  symbol:any='+';
+
+
+ /*
+ t_card=false;
+ 
+ toggel_card(){
+  this.t_card=!this.t_card;
+ }
+ toggleContent(){
+  var symbol:any='';
   if(this.t_card){
-    this.symbol='+';
+    symbol='fa-solid fa-arrow-up';
   }
   else{
-     this.symbol='-';
+     symbol='fa-solid fa-arrow-down';
   }
+  return symbol;
 }
-*/
 
+*/
   ngOnInit(): void {
   }
 //style using the array and making that in the .css
