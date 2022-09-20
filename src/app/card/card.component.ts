@@ -15,7 +15,7 @@ productdetails:any=[
     "pimage":"https://cdn.thewirecutter.com/wp-content/media/2022/07/laptop-under-500-2048px-acer.jpg",
     "pname":"Laptops",
     "pdescrption":"A portable microcomputer having its main components (such as processor, keyboard, and display screen).",
-    "pstatus":"Instock",
+    //"pstatus":"Instock",
     "ptypes":[{
       "typespimage":"https://cdn.mos.cms.futurecdn.net/aHq2mRpFe8PNjasu8SGFtY-1200-80.jpg",
       "typesname":"Lenovo Yoga 9i 14 (Gen 7)"
@@ -27,42 +27,50 @@ productdetails:any=[
 },
   {
     "pid":"002",
-    "pimage":"https://m.media-amazon.com/images/I/61KSceiLHwL._SL1500_.jpg",
-    "pname":"Mouse",
-    "pdescrption":"HP invites you to improve the way you connect and communicate, work and play. Built with strict HP standards.",
-    "pstatus":"OutofStock"
+    "pimage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuFdVngkG5TS0fuQDFjgjnnGlSiALJJ2x9-Q&usqp=CAU",
+    "pname":"Smart phone",
+    "pdescrption":"a mobile phone that performs many of the functions of a computer, typically having a touchscreen interface, internet access, and an operating system capable of running downloaded apps."
+    //"pstatus":"OutofStock"
 
   },
   {
     "pid":"003",
     "pimage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zeSgpzOqjE8PUEfkVBS0SkoQyEoT0V3yzQ&usqp=CAU",
     "pname":"Headphone",
-    "pdescrption":"A pair of small speakers used for listening to sound from a computer, music player or other such device.",
-    "pstatus":"Instock"
+    "pdescrption":"A pair of small speakers used for listening to sound from a computer, music player or other such device."
+    //"pstatus":"Instock"
 
   },
   {
     "pid":"004",
     "pimage":"https://www.hazoorilaljewellers.com/wp-content/uploads/2022/02/03-1.jpg",
     "pname":"Jewellery",
-    "pdescrption":"A pair of small speakers used for listening to sound from a computer, music player or other such electronic device.",
-    "pstatus":"OutofStock"
+    "pdescrption":"A pair of small speakers used for listening to sound from a computer, music player or other such electronic device."
+    //"pstatus":"OutofStock"
 
   },
   {
     "pid":"005",
     "pimage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORq0suv1TmEUu09WEdPcpANYIdYMR0vgfKw&usqp=CAU",
-    "pname":"Dress",
-    "pdescrption":"A pair of small speakers used for listening to sound from a computer, music player or other such electronic device.",
-    "pstatus":"OutofStock"
+    "pname":"Womens wear",
+    "pdescrption":"The fashion and trend for new women's wear have changed. Here is some new trendy different types of women's wear.A pair of small speakers used for listening to sound from a computer, music player or other such electronic device."
+    //"pstatus":"OutofStock"
 
   },
   {
     "pid":"006",
     "pimage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa7TjZRBtLpRgUvcRUmWqGLTnTaU0fLnaQQg&usqp=CAU",
     "pname":"Footwears",
-    "pdescrption":"A pair of small speakers used for listening to sound from a computer, music player or other such electronic device.",
-    "pstatus":"Instock"
+    "pdescrption":"A pair of small speakers used for listening to sound from a computer, music player or other such electronic device."
+    //"pstatus":"Instock"
+
+  },
+  {
+    "pid":"007",
+    "pimage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEwgdW-fwH4FaIkXsKu-soMAoaC8OBB7bmgQ&usqp=CAU",
+    "pname":"Means Wear",
+    "pdescrption":"The fashion and trend for new men's wear have changed. Here is some new trendy different types of men's wear"
+    //"pstatus":"Instock"
 
   }
 

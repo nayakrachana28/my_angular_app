@@ -23,15 +23,20 @@
 <!--Cards for Mobile-->
 <div class="row">
     <!--First column-->
-    <div class="col-sm-2">
+    <div class="col-sm-2 mt-4 mb-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkN4ECao5fn3I4QacWIOzNhDK8xGbeLYjcpA&usqp=CAU" alt="dress" height="150px" width="190px" style="margin-left: 15px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStCgMHEyWC_csNnBa4Afcw8pv2uB9LPt3cmQ&usqp=CAU" alt="dress" height="150px" width="190px" style="margin-left: 15px;">        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1VL7XEGwGv4nAUS3QUXkfvFFqBZZXTdCnLg&usqp=CAU" alt="dress" height="150px" width="190px" style="margin-left: 15px;">
+        <img src="https://web.inmobicdn.net/website/website/6.0.1/uploads/misc/In-App-Advertising.jpg" alt="dress" height="150px" width="190px" style="margin-left: 15px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXDhjHl3jeLAzAiFmFQvFixLEewX6HiN40pQ&usqp=CAU" alt="dress" height="150px" width="190px" style="margin-left: 15px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4P0cVcx-xX32daNb5Ou6pXawruaFcC9ZXA&usqp=CAU" alt="dress" height="150px" width="190px" style="margin-left: 15px;">
     </div>
     <!--Second Column-->
     <div class="col-sm-6 mt-4 mb-4 mr-4">
         <app-mobile-child [mobile_product]="m_Mobile" *ngFor="let m_Mobile of p_mobile"></app-mobile-child>
     </div>
     <!--Third column-->
-    <div class="col-sm-4">
-        <iframe style="margin-left: 40px;" width="300" height="250" src="https://www.youtube.com/embed/e0E6-dRPcJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-        <iframe style="margin-left: 40px;" width="300" height="250" src="https://www.youtube.com/embed/e0E6-dRPcJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-sm-4 mt-4 mb-4">
+        <app-advertisment></app-advertisment>
     </div>
 </div>

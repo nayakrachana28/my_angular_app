@@ -1,0 +1,89 @@
+<section class="vh-270 bg-image"
+  style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+              <form [formGroup]="myForm" novalidate>
+
+                <div class="form-outline form-group mb-4">
+                    <label class="form-label" for="form3Example1cg">Your Name</label>
+                  <input type="text" id="form3Example1cg" class="form-control" placeholder="Enter Your Name" formControlName="registername" 
+                  [ngClass]="{'is-invalid':registername.errors && (registername.touched||registername.dirty),'is-valid':registername.valid}">
+                  <span class="invalid-feedback">
+                        <strong *ngIf="registername.errors?.required">Name is required</strong>
+                        <strong *ngIf="registername.errors?.maxlength">Length is exceed. Max length is 16 characters</strong>
+                  </span>
+                </div>
+
+                <div class="form-outline form-group mb-4">
+                  <label class="form-label" for="form3Example3cg">Your Email</label>
+                  <input type="email" id="form3Example3cg" class="form-control" placeholder="Enter Your Mail Id" formControlName="registermail"
+                  [ngClass]="{'is-invalid':registermail.errors && (registermail.touched||registermail.dirty),'is-valid':registermail.valid}"/>
+                  <span class="invalid-feedback">
+                    <strong *ngIf="registermail.errors?.required">Mail is required</strong>
+                    <strong *ngIf="registermail.errors?.pattern">Pattern does not match</strong>
+              </span>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdg">Mobile</label>
+                    <input type="password" id="form3Example4cdg" class="form-control" placeholder="Enter Your Mobile Number " formControlName="registermobile"
+                    [ngClass]="{'is-invalid':registermobile.errors && (registermobile.touched||registermobile.dirty),'is-valid':registermobile.valid}"/>
+                    <span class="invalid-feedback">
+                      <strong *ngIf="registermobile.errors?.required">Mobile Number is required</strong>
+                      <strong *ngIf="registermobile.errors?.minlength">Min length of number is 10 </strong>
+                </span>
+                  </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cg">Password</label>
+                  <input type="password" id="form3Example4cg" class="form-control" placeholder="Enter the password" formControlName="registerpassword"
+                  [ngClass]="{'is-invalid':registerpassword.errors && (registerpassword.touched||registerpassword.dirty),'is-valid':registerpassword.valid}"/>
+                  <span class="invalid-feedback">
+                    <strong *ngIf="registerpassword.errors?.required">Password is required</strong>
+                    <strong *ngIf="registerpassword.errors?.minlength">Minimum character is 6 required  </strong>
+                    <strong *ngIf="registerpassword.errors?.pattern">Pattern doesnot match</strong>
+              </span>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                  <input type="password" id="form3Example4cdg" class="form-control" placeholder="Confirm the password" formControlName="registerconfirmpassword"
+                  [ngClass]="{'is-invalid':registerconfirmpassword.errors && (registerconfirmpassword.touched||registerconfirmpassword.dirty),'is-valid':registerconfirmpassword.valid}"/>
+                  <span class="invalid-feedback">
+                    <strong *ngIf="registerconfirmpassword.errors?.required">Confirm the password</strong>
+                    <strong *ngIf="registerconfirmpassword.value!=registerpassword.value">Password does not match</strong>
+              </span>
+                </div>
+
+               
+
+                <div class="form-check d-flex justify-content-center mb-5">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                  <label class="form-check-label" for="form2Example3g">
+                    I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                  </label>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button type="button"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Have already an account? 
+                  <a routerLink="/login" class="fw-bold text-body">Login here</a></p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

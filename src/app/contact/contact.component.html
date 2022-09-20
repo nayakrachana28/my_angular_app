@@ -1,0 +1,26 @@
+<div class="top">
+    <div class="text_arrange">
+        <h1 style="color: darkmagenta; text-shadow: 10px 10px 5px grey;">Get in Touch</h1>
+        <h6 style="margin-top: 150px; color: aqua;">Want to get in touch?We'd love to hear from you. Here's how you can
+            reach us...</h6>
+    </div>
+</div>
+<!--Card-->
+<div class="profile-area">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let contacts of contactdetails">
+            <div class="card">
+                <div class="image1"><img src="{{contacts.contact_image1}}" alt=""></div>
+                <div class="image2"><img src="{{contacts.contact_image2}}" alt=""></div>
+                <div class="main-text">
+                    <h2 style="font-weight: 20px; color:violet">{{contacts.contact_type}}</h2>
+                    <p style="color: darkslateblue;">{{contacts.contact_description1}}</p>
+                    <p style="color: indianred;">{{contacts.contact_description2}}</p>
+                    <p style="color: darkorange;">{{contacts.contact_description3}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

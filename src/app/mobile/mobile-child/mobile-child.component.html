@@ -6,10 +6,14 @@
                 <img src="{{mobile_product.img}}" alt="img" style="height: 200px;">
             </div>
             <div class="col-sm-6">
-                <h5 class="card-title">{{mobile_product.pname}}</h5>
-                <p class="card-text">{{mobile_product.pdescription}}</p>
+                <h5 class="card-title">{{mobile_product.pname}}&nbsp;<span (click)="Toggel_mobile()" [ngClass]="Symbol_toggel_mobile()"></span></h5>
+                <p class="card-text" [hidden]="Toggel_mob">{{mobile_product.pdescription}}</p>
                 <p><b>Price: {{ mobile_product.price  | currency : 'INR'}}    </b><s>{{mobile_product.oldprice | currency : 'INR'}}</s></p>
                 <app-quntity></app-quntity>
+                <div [ngSwitch]="mobile_product.pstatus" style="margin-top: 5px;">
+                    <a href="" class="btn btn-outline-success btn-sm" style="margin-top: 5px;" *ngSwitchCase="'InStock'">{{mobile_product.pstatus}}</a>
+                    <a href="" class="btn btn-outline-danger btn-sm" style="margin-top: 5px;" *ngSwitchCase="'OutofStock'">{{mobile_product.pstatus}}</a>
+                </div>
             </div>
         </div>
     </div>

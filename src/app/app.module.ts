@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 // imprted for two way binding gor ngmodel
 import { FormsModule } from '@angular/forms';
+//import the reactive modules for form validation
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContainerComponent } from './container/container.component';
@@ -20,6 +22,10 @@ import { CardChildComponent } from './card/card-child/card-child.component';
 import { LaptopComponent } from './laptop/laptop.component';
 import { MobileChildComponent } from './mobile/mobile-child/mobile-child.component';
 import { LaptopChildComponent } from './laptop/laptop-child/laptop-child.component';
+import { AdvertismentComponent } from './advertisment/advertisment.component';
+import { ContactComponent } from './contact/contact.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +45,17 @@ import { LaptopChildComponent } from './laptop/laptop-child/laptop-child.compone
     CardChildComponent,
     LaptopComponent,
     MobileChildComponent,
-    LaptopChildComponent
+    LaptopChildComponent,
+    AdvertismentComponent,
+    ContactComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,35 @@
+<!--Moving Tools-->
 <div class="row">
-  <div class="col-lg-3 mb-3 mt-3 ml-4" *ngFor="let lap of laptopdetails">
-<app-laptop [product]="lap"></app-laptop>
+  <div class="col-sm-12">
+    <div class="card" style="border: none;">
+      <div class="card-body">
+        <div id="move1">
+          <marquee class="blink" direction="right">Offer is Going on Check it Out</marquee>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Offer comppnents-->
+<div class="row">
+  <div class="col">
+    <div class="card" style="border: none;">
+      <marquee>
+        <app-offer></app-offer>
+      </marquee>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-9 mb-3 mt-3 ml-4">
+    <div class="row">
+      <div class="col-lg-4 mb-3 mt-3 ml-4" *ngFor="let lap of laptopdetails">
+        <app-laptop [product]="lap"></app-laptop>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 mt-4 mb-4">
+    <app-advertisment></app-advertisment>
+  </div>
 </div>

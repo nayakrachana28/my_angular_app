@@ -1,1 +1,40 @@
-<p>card-child works!</p>
+<div class="row">
+    <div class="col-md-12" [ngClass]="sty_array">
+      <div class="card mt-2 mb-3">
+        <img src="{{product_card.pimage}}" class="card-img-top" alt="Image" [style.height]="'150px'">
+        <div class="card-body">
+          <div class="card-up aqua-gradient"></div>
+          <div class="card-body text-center">
+            <!--Used the toggel and string inetrpolation to change "+" and '-'-->
+            <!--Toggel between the '+' and '-' using the  [ngClass]="toggleContent()"-->
+            <h4 class="card-title font-weight-bold">{{product_card.pname}} &nbsp; <span (click)="toggel_card()" [ngClass]="symbol_toggel()"></span></h4>
+            <hr>
+            <!--Used ng class for styling-->
+            <!--Toggel to hide the description-->
+
+            <!--Here ngclass is to style the Description-->
+            <!--In place of [hidden] we can use *ngIf-->
+            <p [ngClass]="sty" [hidden]="t_card"><i class="fas fa-quote-left"></i>{{product_card.pdescrption}}<i
+                class="fas fa-quote-left"></i></p>
+          </div>
+          <div class="d-flex justify-content-between">
+
+            <!--<div class="col-sm-5" [ngSwitch]="product_card.pstatus" [style.text-align]="'center'">
+              <p *ngSwitchCase="'Instock'" class="text-success" [style.background-color]="'lightgreen'"
+                style="padding: 10px;">{{product_card.pstatus}}</p>
+              <p *ngSwitchCase="'OutofStock'" class="text-danger" [style.background-color]="'lightpink'"
+                style="padding: 10px;">{{product_card.pstatus}}</p>
+            </div>-->
+            <!-- (click)="view_details(product_card.ptypes);" this in button-->
+            <div [ngSwitch]="product_card.pid">
+              <a class="nav-link" style="margin-left: 40px; overflow:hidden" routerLink="/laptop-child" *ngSwitchCase="001"><button type="button" class="btn btn-dark">View More</button></a>
+              <a class="nav-link" style="margin-left: 40px; overflow:hidden" routerLink="/mobile" *ngSwitchCase="002"><button type="button" class="btn btn-dark">View More</button></a>
+              <a class="nav-link" style="margin-left: 40px; overflow:hidden" routerLink="/pants" *ngSwitchCase="005"><button type="button" class="btn btn-dark">View More</button></a>
+              <a class="nav-link" style="margin-left: 40px; overflow:hidden" routerLink="/type" *ngSwitchDefault><button type="button" class="btn btn-dark">View More</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<app-type [product]="prod_id"></app-type>-->
+  </div>

@@ -32,7 +32,7 @@ export class LaptopService {
     },
     {
       lid: 3,
-      lname: "HP Pavilion Laptop 14-ec0035AU",
+      lname: "HP Pavilion Laptop 14",
       ldescription: "Windows OS · AMD GPU · Solid State Drive · With No-glare Screen, / NVIDIA Graphics / Win 11",
       lprice: 49300.00,
       lstatus: "InStock",

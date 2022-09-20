@@ -8,28 +8,53 @@
   </div>
 </div>
 </div>-->
-<div class="row container" style="padding-left: 130px;">
+<!--Moving Tools-->
 <div class="row">
-<div class="col">
-
-</div>
-</div>
-<div class="col-sm-4 mt-2 mb-2" *ngFor="let dress_pants of d_pants">
-  <!-- Card-->
-  <div class="card rounded shadow">
-    <div class="card-body p-4"><img src="{{dress_pants.img}}" alt="" class="img-fluid d-block mx-auto mb-3" style="height: 150px; width: 150px; text-align: center;">
-      <h5>{{dress_pants.pname}}</h5>
-      <p class="small font-italic">{{dress_pants.pdescription}}</p>
-      <h5>Price: {{dress_pants.price | currency: 'INR'}}</h5>
-      <ul class="list-inline small">
-        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-        <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
-      </ul>
-      <app-quntity></app-quntity>
+  <div class="col-sm-12">
+    <div class="card" style="border: none;">
+      <div class="card-body">
+        <div id="move1">
+          <marquee class="blink" direction="right">Offer is Going on Check it Out</marquee>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+<!--Offer comppnents-->
+<div class="row">
+  <div class="col">
+    <div class="card" style="border: none;">
+      <marquee>
+        <app-offer></app-offer>
+      </marquee>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-8 mt-2 mb-2">
+    <!-- Card-->
+    <div class="row">
+      <div class="col-sm-4 mt-2 mb-2" *ngFor="let dress_pants of d_pants">
+    <div class="card rounded shadow">
+      <div class="card-body p-4"><img src="{{dress_pants.img}}" alt="" class="img-fluid d-block mx-auto mb-3"
+          style="height: 150px; width: 150px; text-align: center;">
+        <h5>{{dress_pants.pname}}</h5>
+        <p class="small font-italic">{{dress_pants.pdescription}}</p>
+        <h5>Price: {{dress_pants.price | currency: 'INR'}}</h5>
+        <ul class="list-inline small">
+          <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+          <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+          <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+          <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+          <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+        </ul>
+        <app-quntity></app-quntity>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="col-sm-4 mt-4 mb-4">
+    <app-advertisment></app-advertisment>
 </div>
 </div>

@@ -1,5 +1,4 @@
-
-    <!--<div class="container mx-auto mt-4">
+<!--<div class="container mx-auto mt-4">
       <div class="row">
         <div class="col-sm-4" *ngFor="let pdetails of productdetails" style="height: 10px;">
         <div class="card testimonial-card mt-2 mb-3">
@@ -30,48 +29,17 @@
      </div>
   
     -->
-
-
-
-
-
-
-  <div class="container">
+<div class="container">
+<div class="row">
+  <div class="col-sm-9 ml-3">
     <div class="row">
-      <div class="col-sm-4" *ngFor="let pdetails of productdetails" [ngClass]="sty_array">
-        <div class="card mt-2 mb-3">
-        <img src="{{pdetails.pimage}}" class="card-img-top" alt="Image" [style.height]="'150px'">
-        <div class="card-body">
-          <div class="card-up aqua-gradient"></div>
-          <div class="card-body text-center">
-            <!--Used the toggel and string inetrpolation to change "+" and '-'-->
-            <!--Toggel between the '+' and '-' using the  [ngClass]="toggleContent()"-->
-            <span (click)="toggel_card()">{{symbol}}</span>
-            <h4 class="card-title font-weight-bold">{{pdetails.pname}}</h4>
-            <hr>
-            <!--Used ng class for styling-->
-            <!--Toggel to hide the description-->
-            
-            <!--Here ngclass is to style the Description-->
-            <!--In place of [hidden] we can use *ngIf-->
-            <p [ngClass]="sty" [hidden]="t_card" ><i class="fas fa-quote-left"></i>{{pdetails.pdescrption}}<i class="fas fa-quote-left"></i></p>
-          </div>
-      <div class="d-flex justify-content-between">
-        
-        <div class="col-sm-5" [ngSwitch]="pdetails.pstatus" [style.text-align]="'center'">
-          <p *ngSwitchCase="'Instock'" class="text-success" [style.background-color]="'lightgreen'" style="padding: 10px;">{{pdetails.pstatus}}</p>
-          <p *ngSwitchCase="'OutofStock'" class="text-danger" [style.background-color]="'lightpink'" style="padding: 10px;">{{pdetails.pstatus}}</p>
-        </div>
-        <div class="col-sm-6">
-        <a class="nav-link" routerLink="/type"><button type="button" class="btn btn-dark" (click)="view_details(pdetails.ptypes);">View More</button></a>
-      </div>
-      
+      <div class="col-sm-4 mt-4 mb-4" *ngFor="let pdetails of productdetails">
+        <app-card-child [product_card]="pdetails"></app-card-child>
       </div>
     </div>
-    </div>
-      </div>    
-      <app-type [product]="prod_id"></app-type>
   </div>
-    </div>
-  
-
+  <div class="col-sm-3 mt-4 mb-4">
+    <app-advertisment></app-advertisment>
+  </div>
+</div>
+</div>

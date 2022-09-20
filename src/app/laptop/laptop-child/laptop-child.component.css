@@ -1,0 +1,14 @@
+#move1{
+    font-size: 20px;
+    background-color: lightpink;
+    text-align: center;
+    color: black;
+}
+.blink{
+    animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}

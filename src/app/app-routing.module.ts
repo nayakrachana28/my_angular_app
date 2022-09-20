@@ -8,6 +8,9 @@ import { DressComponent } from './dress/dress.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { LaptopComponent } from './laptop/laptop.component';
 import { LaptopChildComponent } from './laptop/laptop-child/laptop-child.component';
+import { ContactComponent } from './contact/contact.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -18,7 +21,10 @@ const routes: Routes = [
   {path:'pants',component:DressComponent},
   {path:'mobile',component:MobileComponent},
   {path:'laptop',component:LaptopComponent},
-  {path:'laptop-child',component:LaptopChildComponent}
+  {path:'laptop-child',component:LaptopChildComponent},
+  {path:'contact',component:ContactComponent},
+  {path:'register',component:RegisterComponent},
+  {path:'login',component:LoginComponent}
 ];
 
 @NgModule({
