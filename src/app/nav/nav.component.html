@@ -106,10 +106,12 @@
           <a class="nav-link mt-2" style="font-size: 13px;" routerLink="contact">contact</a>
         </li>
 
-        <button type="button" class="btn btn-dark" style="margin-left: 130px;" routerLink="register">Register</button> &nbsp; 
-        <button type="button" class="btn btn-dark" style="margin-left: 10px;" routerLink="login">Login</button>
+        <button type="button" class="btn btn-dark" routerLink="register">Register</button> &nbsp; 
+        <button type="button" class="btn btn-dark" style="margin-left: 10px;" routerLink="login">Login</button>&nbsp;
+        <a routerLink="cart-details" ><span style="color:cyan; font-size:xx-large; margin-left: 50px;"><i class="fa-solid fa-cart-shopping"></i></span></a><span style="color:rgb(131, 220, 29);">{{cartCount}}</span>
+
       </ul>
-      <form class="d-flex" style="margin-left: 50px;">
+      <form class="d-flex" style="margin-left: 170px;">
         <input class="form-control me-2" #productname type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>

@@ -1,0 +1,27 @@
+{
+  "posts": [],
+  "users": [],
+  "cart": [
+    {
+      "cart_id": 2,
+      "cart_image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662437040/Croma%20Assets/Communication/Mobiles/Images/251114_ck8zlj.png/mxw_2048,f_auto",
+      "cart_name": "realme C31",
+      "cart_price": 8799,
+      "id": 1
+    },
+    {
+      "cart_id": 1,
+      "cart_image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662445976/Croma%20Assets/Communication/Mobiles/Images/246260_dqxkax.png/mxw_2048,f_auto",
+      "cart_name": "SAMSUNG Galaxy A03 Core",
+      "cart_price": 7250,
+      "id": 2
+    },
+    {
+      "cart_id": 1,
+      "cart_image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662445976/Croma%20Assets/Communication/Mobiles/Images/246260_dqxkax.png/mxw_2048,f_auto",
+      "cart_name": "SAMSUNG Galaxy A03 Core",
+      "cart_price": 7250,
+      "id": 3
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,12 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartSvc:CartService) { }
   public logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6bG65rM5lr5sXogjdaT0PlxoykDZdqFqafQ&usqp=CAU";
 
 //Stayling the dropdowm menu
   drop_sty:any[]=['hovering'];
+  //Add to cart count
+  cartCount:number=0;
   ngOnInit(): void {
+    //cart Count
+    this.cartSvc.getCartItems().subscribe(
+      (response)=>
+      {
+        this.cartCount=response.length;
+        console.log(this.cartCount);
+      }
+    )
+    this.cartSvc.countproduct.subscribe(
+      (response)=>
+      {
+        this.cartCount=response;
+        console.log(this.cartCount)
+      }    
+      )
   }
 
 }

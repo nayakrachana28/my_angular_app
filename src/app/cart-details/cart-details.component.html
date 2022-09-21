@@ -1,0 +1,30 @@
+<div class="row">
+<div class="col-md-12">
+  <div class="card-header">Total Bag Amount {{totalprice(cart) | currency: 'INR': 'symbol':'3.0'}}</div>
+<div class="card" *ngFor="let item of cart" >
+    <div class="card-body">
+        <div class="row">
+        <div class="col-md-4">
+            <img src="{{item.cart_image}}" alt="image" style="height: 150px;">
+        </div>
+        <div class="col-md-5">
+      <h5 class="card-title">{{item.cart_name}}</h5>
+      <app-quntity></app-quntity>
+      <h6>Quntity: {{cart_quality}}</h6>
+      <button href="#" (click)="delete(item)" class="btn btn-danger">delete</button>
+    </div>
+    <div class="col-md-3">
+        <h6>{{item.cart_price}}</h6>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="row">
+    <div>
+    <button (click)="onClick()" type="button" class="btn btn-dark" style="background-color: darkseagreen; margin-left: 30px; padding-left: 20px; padding-right: 20px; color: black;">Add More Products</button>
+    <a href="https://rzp.io/i/L3WdRAx1g" type="button" class="btn btn-dark" target="_blank" style="background-color: darkseagreen; margin-left: 30px; padding-left: 20px; padding-right: 20px; color: black;">Proceed to Buy</a>
+    </div>
+</div>

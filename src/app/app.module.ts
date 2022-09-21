@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 //import the reactive modules for form validation
 import { ReactiveFormsModule } from '@angular/forms';
+//Import Httpclientmodule for accesting the http localhost
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContainerComponent } from './container/container.component';
@@ -26,6 +28,7 @@ import { AdvertismentComponent } from './advertisment/advertisment.component';
 import { ContactComponent } from './contact/contact.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { CartDetailsComponent } from './cart-details/cart-details.component';
 
 @NgModule({
   declarations: [
@@ -49,13 +52,15 @@ import { LoginComponent } from './login/login.component';
     AdvertismentComponent,
     ContactComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    CartDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

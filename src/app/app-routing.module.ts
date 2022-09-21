@@ -11,6 +11,7 @@ import { LaptopChildComponent } from './laptop/laptop-child/laptop-child.compone
 import { ContactComponent } from './contact/contact.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { CartDetailsComponent } from './cart-details/cart-details.component';
 
 
 const routes: Routes = [
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path:'laptop-child',component:LaptopChildComponent},
   {path:'contact',component:ContactComponent},
   {path:'register',component:RegisterComponent},
-  {path:'login',component:LoginComponent}
+  {path:'login',component:LoginComponent},
+  {path:'cart-details',component:CartDetailsComponent}
 ];
 
 @NgModule({
