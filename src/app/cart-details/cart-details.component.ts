@@ -60,7 +60,7 @@ delete(deleteItem: Cartitem){
 }
 
 onClick(){
-  this.router.navigate(['mobile'])
+  this.router.navigate([''])
 }
 
   ngOnInit(): void {

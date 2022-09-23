@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-nav',
@@ -8,8 +9,10 @@ import { CartService } from '../cart.service';
 })
 export class NavComponent implements OnInit {
 
-  constructor(private cartSvc:CartService) { }
+  constructor(private cartSvc:CartService,private authService:UserService) { }
   public logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6bG65rM5lr5sXogjdaT0PlxoykDZdqFqafQ&usqp=CAU";
+
+  auth:boolean=false;
 
 //Stayling the dropdowm menu
   drop_sty:any[]=['hovering'];
@@ -31,6 +34,13 @@ export class NavComponent implements OnInit {
         console.log(this.cartCount)
       }    
       )
+      //register
+      this.authService.authSubject.subscribe(
+        data=>{
+          console.log('auth inside nav component:'+data);
+          this.auth=data;
+        }
+      );
   }
 
 }

@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { CartDetailsComponent } from './cart-details/cart-details.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'register',component:RegisterComponent},
   {path:'login',component:LoginComponent},
-  {path:'cart-details',component:CartDetailsComponent}
+  {path:'cart-details',component:CartDetailsComponent},
+  {path:'dashboard',component:DashboardComponent}
 ];
 
 @NgModule({

@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, AbstractControl } from '@angular/forms';
+import { FormGroup, AbstractControl, FormBuilder } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { Validators } from '@angular/forms';
+import { environment } from 'src/environments/environment';
+import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-register',
@@ -10,35 +14,77 @@ import { Validators } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  userurl=environment.userapi;
 
-  myForm:FormGroup|any;
-  registername:FormControl|any;
-  registermail:FormControl|any;
-  registermobile:FormControl|any;
-  registerpassword:FormControl|any;
-  registerconfirmpassword:FormControl|any;
-  registeracceptTerms:FormControl|any;
+  /*myForm:FormGroup|any;
+  name:FormControl|any;
+  email:FormControl|any;
+  mobile:FormControl|any;
+  password:FormControl|any;
+  Confirmpassword:FormControl|any;*/
 
+  formValue:FormGroup=new FormGroup({
+    name:new FormControl(''),
+    email:new FormControl(''),
+    mobile:new FormControl(''),
+    password:new FormControl('')
+  })
+
+  submitted=false;
+  constructor(private http:HttpClient,private router:Router,private formbuilder:FormBuilder) { }
   ngOnInit(): void {
-
+/*
     //Instance for values
-    this.registername= new FormControl('',[Validators.required,Validators.maxLength(15)]);
-    this.registermail=new FormControl('',[Validators.required,Validators.pattern('^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$')]);
-    this.registermobile=new FormControl('',[Validators.required,Validators.minLength(10)]);
-    this.registerpassword=new FormControl('',[Validators.required,Validators.minLength(6),Validators.pattern('^[a-zA-Z0-9]{6,16}$')]);
-    this.registerconfirmpassword=new FormControl('',[Validators.required]);
-    this.registeracceptTerms=new FormControl([false,Validators.requiredTrue]);
+    this.name= new FormControl('',[Validators.required]);
+    this.email=new FormControl('',[Validators.required]);
+    this.mobile=new FormControl('',[Validators.required]);
+    this.password=new FormControl('',[Validators.required]);
+    this.Confirmpassword=new FormControl('',[Validators.required]);
     //Validators:[Validation.match('registerpassword','registerconfirmpassword')];
     this.myForm=new FormGroup(
       {
-        'registername':this.registername,
-        'registermail':this.registermail,
-        'registermobile':this.registermobile,
-        'registerpassword':this.registerpassword,
-        'registerconfirmpassword':this.registerconfirmpassword
+        'registername':this.name,
+        'registermail':this.email,
+        'registermobile':this.mobile,
+        'registerpassword':this.password,
+        'registerconfirmpassword':this.Confirmpassword
       }
-    )
+    );*/
+
+    this.formValue=this.formbuilder.group(
+      {
+        name:['',Validators.required],
+        email:['',Validators.required],
+        mobile:['',Validators.required],
+        password:['',Validators.required]
+      }
+    );
+  }
+
+  get f(){return this.formValue.controls;}
+
+  Addregistereduser(){
+    this.submitted=true;
+    if(this.formValue.invalid){
+      return;
+    }
+
+    this.http.post<any>(this.userurl,this.formValue.value)
+    .subscribe(res=>{
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+      })
+      Toast.fire({
+        icon: 'success',
+        title: 'Sign Up Successful'
+      })
+      this.formValue.reset();
+      this.router.navigate(['login']);
+    })
   }
 
 }

@@ -14,10 +14,13 @@
           <a class="nav-link active" aria-current="page" routerLink="" [style.font-size]="'20px'">Lifestyle_Store</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mt-2" style="font-size: 13px;" routerLink="card">About_Products</a>
+          <a class="nav-link mt-2" style="font-size: 13px;" routerLink="card">Summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mt-2" style="font-size: 13px;" routerLink="dashboard" *ngIf="auth">All_products</a>
         </li>
 
-        <li class="nav-item dropdown mt-2" style="font-size: 15px;">
+        <li class="nav-item dropdown mt-2" style="font-size: 15px;" *ngIf="auth">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">Types of Products</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown" [ngClass]="drop_sty">
@@ -103,15 +106,15 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link mt-2" style="font-size: 13px;" routerLink="contact">contact</a>
+          <a class="nav-link mt-2" style="font-size: 13px;" routerLink="contact" *ngIf="auth">contact</a>
         </li>
 
-        <button type="button" class="btn btn-dark" routerLink="register">Register</button> &nbsp; 
-        <button type="button" class="btn btn-dark" style="margin-left: 10px;" routerLink="login">Login</button>&nbsp;
-        <a routerLink="cart-details" ><span style="color:cyan; font-size:xx-large; margin-left: 50px;"><i class="fa-solid fa-cart-shopping"></i></span></a><span style="color:rgb(131, 220, 29);">{{cartCount}}</span>
+        <button type="button" class="btn btn-dark" routerLink="register" *ngIf="!auth">Register</button> &nbsp; 
+        <!--<button type="button" class="btn btn-dark" style="margin-left: 10px;" routerLink="login">Login</button>-->&nbsp;
+        <a routerLink="cart-details" ><span style="color:cyan; font-size:xx-large; margin-left: 50px;" *ngIf="auth"><i class="fa-solid fa-cart-shopping"></i></span></a><span style="color:rgb(131, 220, 29);" *ngIf="auth">{{cartCount}}</span>
 
       </ul>
-      <form class="d-flex" style="margin-left: 170px;">
+      <form class="d-flex" style="margin-left: 170px;" *ngIf="auth">
         <input class="form-control me-2" #productname type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>

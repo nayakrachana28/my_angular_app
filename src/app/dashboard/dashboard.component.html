@@ -1,0 +1,105 @@
+
+<nav class="navbar navbar-light" style="background-color: aqua;">
+    <div class="container-fluid">
+      <h1 style="color:darkblue; font-size: 40px;">Product Details</h1>
+      <div class="d-flex">
+        <!-- Button trigger modal -->
+        <button (click)="clickAddproduct()" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-plus"></i>&nbsp; Add products
+        </button>
+      </div>
+    </div>
+  </nav>
+  <table class="table mt-4 mb-3" style="box-shadow: 10px 10px 10px grey;">
+    <thead>
+      <tr>
+        <th scope="col">ID No</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Oldprice</th>
+        <th scope="col">Status</th>
+        <th scope="col">Images</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of accountData">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.email}}</td>
+        <td>{{product.mobile}}</td>
+        <td><img src="{{product.images}}" alt="productimage" height="80px"></td>
+        <td>{{product.status}}</td>
+        <td>
+          <button (click)="onEdit(product)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>&nbsp;
+          <button (click)="deleteproduct(product)" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Account details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue">
+            <div class="form-group mb-3">
+              <label class="form-label">Product Name</label>
+              <input type="name" class="form-control" formControlName="name"
+              [ngClass]="{'is-invalid':submitted && f['name'].errors}">
+              <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                <div *ngIf="f['name'].errors['required']">Product Name is required</div>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label">Price</label>
+              <input type="email" class="form-control" formControlName="email"
+              [ngClass]="{'is-invalid':submitted && f['email'].errors}">
+              <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                <div *ngIf="f['email'].errors['required']">Price is required</div>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label">Old Price</label>
+              <input type="mobile" class="form-control" formControlName="mobile"
+              [ngClass]="{'is-invalid':submitted && f['mobile'].errors}">
+              <div *ngIf="submitted && f['mobile'].errors" class="invalid-feedback">
+                <div *ngIf="f['mobile'].errors['required']">Old price is required</div>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label">Images</label>
+              <input type="images" class="form-control" formControlName="images"
+              [ngClass]="{'is-invalid':submitted && f['images'].errors}">
+              <div *ngIf="submitted && f['images'].errors" class="invalid-feedback">
+                <div *ngIf="f['images'].errors['required']">Mention the Statuss</div>
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <label class="form-label">Status</label>
+              <input type="status" class="form-control" formControlName="status"
+              [ngClass]="{'is-invalid':submitted && f['status'].errors}">
+              <div *ngIf="submitted && f['status'].errors" class="invalid-feedback">
+                <div *ngIf="f['status'].errors['required']">Mention the Statuss</div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" *ngIf="showAdd" (click)="postproductDetails()" class="btn btn-primary">Add</button>
+                <button type="button" *ngIf="showUpdate" (click)="updateproductdetails()" class="btn btn-warning">Update</button>
+              </div>
+          </form>
+        </div>
+       
+      </div>
+    </div>
+  </div>
