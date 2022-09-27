@@ -8,6 +8,7 @@ export const environment = {
   //userapi:"http://localhost:3000/users",
   //adminapi:"http://localhost:3000/admin"
 
+  postapi:"https://heroku-json-server-fakedb-ls.herokuapp.com/posts",
   cartapi:"https://heroku-json-server-fakedb-ls.herokuapp.com/cart",
   userapi:"https://heroku-json-server-fakedb-ls.herokuapp.com/users",
   adminapi:"https://heroku-json-server-fakedb-ls.herokuapp.com/admin"
