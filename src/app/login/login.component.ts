@@ -57,8 +57,8 @@ export class LoginComponent implements OnInit {
           timerProgressBar: true,
         })
         Toast.fire({
-          icon: 'error',
-          title: 'User not found'
+          icon: 'success',
+          title: 'Login Successful'
         })
         this.formvalue.reset();
         this.router.navigate([''])
@@ -95,9 +95,8 @@ export class LoginComponent implements OnInit {
           timerProgressBar: true,
         })
         Toast.fire({
-         
-          icon: 'error',
-          title: 'User not found'
+          icon: 'success',
+          title: 'Login Successful'
         })
         this.formvalue.reset();
         this.router.navigate([''])
