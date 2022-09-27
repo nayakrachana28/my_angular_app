@@ -57,8 +57,8 @@ export class LoginComponent implements OnInit {
           timerProgressBar: true,
         })
         Toast.fire({
-          icon: 'success',
-          title: 'Login Successful'
+          icon: 'error',
+          title: 'User not found'
         })
         this.formvalue.reset();
         this.router.navigate([''])
@@ -72,8 +72,8 @@ export class LoginComponent implements OnInit {
           timerProgressBar: true,
         })
         Toast.fire({
-          icon: 'error',
-          title: 'User not found'
+          icon: 'success',
+          title: 'Login Successful'
         })     
         this.adminService.validateAuth_admin(false);      
       }
@@ -95,8 +95,9 @@ export class LoginComponent implements OnInit {
           timerProgressBar: true,
         })
         Toast.fire({
-          icon: 'success',
-          title: 'Login Successful'
+         
+          icon: 'error',
+          title: 'User not found'
         })
         this.formvalue.reset();
         this.router.navigate([''])
@@ -110,8 +111,9 @@ export class LoginComponent implements OnInit {
           timerProgressBar: true,
         })
         Toast.fire({
-          icon: 'error',
-          title: 'User not found'
+          icon: 'success',
+          title: 'Login Successful'
+          
         })     
         this.userService.validateAuth(false);      
       }
