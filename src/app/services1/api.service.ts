@@ -25,13 +25,13 @@ export class ApiService {
   }
 
   updateproduct(data:any,id:number){
-    return this.http.put<any>(this.posturl+id,data).pipe(map((result:any)=>{
+    return this.http.put<any>(this.posturl+'/'+id,data).pipe(map((result:any)=>{
       return result;
     }))
   }
 
   deleteproduct(id:number){
-    return this.http.delete<any>(this.posturl+id).pipe(map((result:any)=>{
+    return this.http.delete<any>(this.posturl+'/'+id).pipe(map((result:any)=>{
       return result;
     }))
   }
