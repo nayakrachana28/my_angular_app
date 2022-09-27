@@ -27,7 +27,7 @@ export class LaptopComponent implements OnInit {
   }
   quantity:number=1;
 
-  addToCart(product:any){
+  addToCart_In_laptop(product:any){
     this.cart.cart_image=product.limage;
     this.cart.cart_name=product.lname;
     this.cart.cart_price=product.lprice;
@@ -49,7 +49,13 @@ export class LaptopComponent implements OnInit {
     })
     this.cartsvc.getCount();
   }  
-
+  addToCart_out_laptop(){
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Cannot add it is out of Stock'
+    })
+  }
  
   ngOnInit(): void {
    

@@ -14,7 +14,12 @@
                     <a href="" class="btn btn-outline-success btn-sm" style="margin-top: 5px;" *ngSwitchCase="'InStock'">{{mobile_product.pstatus}}</a>
                     <a href="" class="btn btn-outline-danger btn-sm" style="margin-top: 5px;" *ngSwitchCase="'OutofStock'">{{mobile_product.pstatus}}</a>
                 </div>
-                <button class="m-3" (click)="addToCart(mobile_product)" style="width:150px;border-radius:10px; background-color:hotpink; color: midnightblue;">Add to Cart</button>
+                <div *ngIf="mobile_product.pstatus=='InStock'">
+                <button class="m-3" (click)="addToCart_In(mobile_product)" style="width:150px;border-radius:10px; background-color:hotpink; color: midnightblue;">Add to Cart</button>
+                </div>
+                <div *ngIf="mobile_product.pstatus=='OutofStock'">
+                    <button class="m-3" (click)="addToCart_out()" style="width:150px;border-radius:10px; background-color:hotpink; color: midnightblue;">Add to Cart</button>
+                    </div>
             </div>
         </div>
     </div>

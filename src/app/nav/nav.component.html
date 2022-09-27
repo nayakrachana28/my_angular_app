@@ -17,7 +17,7 @@
           <a class="nav-link mt-2" style="font-size: 13px;" routerLink="card">Summary</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mt-2" style="font-size: 13px;" routerLink="dashboard" *ngIf="auth">All_products</a>
+          <a class="nav-link mt-2" style="font-size: 13px;" routerLink="dashboard" *ngIf="auth_admin">All_products</a>
         </li>
 
         <li class="nav-item dropdown mt-2" style="font-size: 15px;" *ngIf="auth">
@@ -110,11 +110,12 @@
         </li>
 
         <button type="button" class="btn btn-dark" routerLink="register" *ngIf="!auth">Register</button> &nbsp; 
-        <!--<button type="button" class="btn btn-dark" style="margin-left: 10px;" routerLink="login">Login</button>-->&nbsp;
-        <a routerLink="cart-details" ><span style="color:cyan; font-size:xx-large; margin-left: 50px;" *ngIf="auth"><i class="fa-solid fa-cart-shopping"></i></span></a><span style="color:rgb(131, 220, 29);" *ngIf="auth">{{cartCount}}</span>
+        <!--<button type="button" class="btn btn-dark" style="margin-left: 10px;" routerLink="login">Login</button>-->
+        <a routerLink="cart-details" ><span style="color:cyan; font-size:xx-large;" *ngIf="auth"><i class="fa-solid fa-cart-shopping"></i></span></a><span style="color:rgb(131, 220, 29);" *ngIf="auth">{{cartCount}}</span>&nbsp;
+        &nbsp;<button type="button" class="btn btn-dark" routerLink="login" style="margin-left: 20px;" *ngIf="auth || auth_admin">LogOut</button> &nbsp; 
 
       </ul>
-      <form class="d-flex" style="margin-left: 170px;" *ngIf="auth">
+      <form class="d-flex" style="margin-left: 110px;" *ngIf="auth">
         <input class="form-control me-2" #productname type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>

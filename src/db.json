@@ -47,22 +47,6 @@
       "mobile": "700.00",
       "images": "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445649/item/ingoods_07_445649.jpg?width=1600&impolicy=quality_75",
       "status": "Inactive"
-    },
-    {
-      "id": 7,
-      "name": "Mast Harbour Pants",
-      "email": "799.00",
-      "mobile": "899.00",
-      "images": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/m/a/magre_mss20r1s404_1.jpg?rnd=20200526195200",
-      "status": "Active"
-    },
-    {
-      "id": 8,
-      "name": "Asus Vivobook",
-      "email": "49990.00",
-      "mobile": "53899.00",
-      "images": "https://d39d98bvxoocym.cloudfront.net/media/catalog/product/b/2/b2321fbf2_151890_b_lgexcgsqffpz2nam.jpg?width=800&height=800&store=en_IN&image-type=image",
-      "status": "Active"
     }
   ],
   "users": [
@@ -81,13 +65,22 @@
       "id": 2
     }
   ],
+  "admin":[
+    {
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "mobile": "9808767895",
+      "password": "admin567",
+      "id": 1
+    }
+  ],
   "cart": [
     {
-      "cart_id": 3,
-      "cart_image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSNkFbLsTYf9X_GM3EpdnF6tScwLnizJ98CeYal2qjkI2ChRpDkcQ37LS6n9izDoMGpFWaL3_7GeI1RTg9cCAY0Vcjg9tE1EC47AE0WsWA42FcHQtHTuYow",
-      "cart_name": "HP Pavilion Laptop 14",
-      "cart_price": 49300,
-      "id": 2
+      "cart_id": 1,
+      "cart_image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662445976/Croma%20Assets/Communication/Mobiles/Images/246260_dqxkax.png/mxw_2048,f_auto",
+      "cart_name": "SAMSUNG Galaxy A03 Core",
+      "cart_price": 7250,
+      "id": 1
     }
   ]
 }

@@ -21,7 +21,7 @@ export class MobileChildComponent implements OnInit {
   }
   quantity:number=1;
 
-  addToCart(product:any){
+  addToCart_In(product:any){
     this.cart.cart_image=product.img;
     this.cart.cart_name=product.pname;
     this.cart.cart_price=product.price;
@@ -44,6 +44,13 @@ export class MobileChildComponent implements OnInit {
     this.cartsvc.getCount();
   }  
   
+  addToCart_out(){
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Cannot add it is out of Stock'
+    })
+  }
   
   
   //input from parent

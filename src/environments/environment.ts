@@ -4,8 +4,13 @@
 
 export const environment = {
   production: false,
-  cartapi:"http://localhost:3000/cart",
-  userapi:"http://localhost:3000/users"
+  //cartapi:"http://localhost:3000/cart",
+  //userapi:"http://localhost:3000/users",
+  //adminapi:"http://localhost:3000/admin"
+
+  cartapi:"https://heroku-json-fakedb-lifestyle.herokuapp.com/cart",
+  userapi:"https://heroku-json-fakedb-lifestyle.herokuapp.com/users",
+  adminapi:"https://heroku-json-fakedb-lifestyle.herokuapp.com/admin"
 
 };
 

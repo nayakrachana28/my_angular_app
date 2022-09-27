@@ -19,7 +19,12 @@
         <a href="" class="btn btn-outline-success btn-sm" style="margin-top: 5px;" *ngSwitchCase="'InStock'">{{product.lstatus}}</a>
         <a href="" class="btn btn-outline-danger btn-sm" style="margin-top: 5px;" *ngSwitchCase="'OutofStock'">{{product.lstatus}}</a>
         </div>
-        <button class="m-3" (click)="addToCart(product)" style="width:150px;border-radius:10px; background-color:hotpink; color: midnightblue;">Add to Cart</button>
+        <div *ngIf="product.lstatus=='InStock'">
+          <button class="m-3" (click)="addToCart_In_laptop(product)" style="width:150px;border-radius:10px; background-color:hotpink; color: midnightblue;">Add to Cart</button>
+          </div>
+          <div *ngIf="product.lstatus=='OutofStock'">
+              <button class="m-3" (click)="addToCart_out_laptop()" style="width:150px;border-radius:10px; background-color:hotpink; color: midnightblue;">Add to Cart</button>
+              </div>
       </div>
       </div>
     </div>

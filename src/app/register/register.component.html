@@ -140,6 +140,7 @@
                     [ngClass]="{'is-invalid':submitted && f['mobile'].errors}"/>
                     <div *ngIf="submitted && f['mobile'].errors" class="invalid-feedback">
                       <div *ngIf="f['mobile'].errors['required']">Mobile Number is requried</div>
+                      <div *ngIf="f['mobile'].errors['minlength']">Mininum length requried is 10</div>
                     </div>
                   </div>
 
