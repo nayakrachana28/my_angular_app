@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Cartitem } from '../cartitem';
 import { CartService } from '../cart.service';
 import { Router } from '@angular/router';
-import Swal from 'sweetalert2';
+import Swal from 'sweetalert2';//install
 
 @Component({
   selector: 'app-cart-details',

@@ -29,7 +29,7 @@ export class CartService {
   }
 
   removeCartitems(item:any){
-   return this.http.delete(this.url+item.cart_id);
+   return this.http.delete(this.url+item.id);
   }
 
   public countproduct=new Subject<number>();
